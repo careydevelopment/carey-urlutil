@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "carey-url-util": {
+      "projectType": "library",
+      "root": "projects/carey-url-util",
+      "sourceRoot": "projects/carey-url-util/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/carey-url-util/tsconfig.lib.json",
+            "project": "projects/carey-url-util/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/carey-url-util/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/carey-url-util/src/test.ts",
+            "tsConfig": "projects/carey-url-util/tsconfig.spec.json",
+            "karmaConfig": "projects/carey-url-util/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/carey-url-util/tsconfig.lib.json",
+              "projects/carey-url-util/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "carey-url-util"
 }

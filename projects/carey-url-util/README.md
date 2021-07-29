@@ -1,24 +1,22 @@
-# CareyUrlUtil
+![Carey Development Logo](http://careydevelopment.us/img/branding/careydevelopment-logo-sm.png)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.9.
+# Carey Development URL Utilities
 
-## Code scaffolding
+![license](https://img.shields.io/badge/license-MIT-blue.svg) 
+[![npm version](https://badge.fury.io/js/carey-url-util.svg)](https://badge.fury.io/js/carey-url-util)
 
-Run `ng generate component component-name --project carey-url-util` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project carey-url-util`.
-> Note: Don't forget to add `--project carey-url-util` or else it will be added to the default project in your `angular.json` file. 
+## Overview
+This package includes a service with convenience methods for extracting info from URLs, such as request parameters, and 
+base URLs.
 
-## Build
+## Usage: Installation
+It's easy to install this package:
+```
+npm install carey-url-util
+```
 
-Run `ng build carey-url-util` to build the project. The build artifacts will be stored in the `dist/` directory.
+Once you've installed it, you can begin using the service and models included in the package.
 
-## Publishing
+## License
+This code is under the [MIT License](https://github.com/careydevelopment/carey-urlutil/blob/master/LICENSE).
 
-After building your library with `ng build carey-url-util`, go to the dist folder `cd dist/carey-url-util` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test carey-url-util` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
